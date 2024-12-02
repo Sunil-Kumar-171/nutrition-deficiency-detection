@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Nutrition Deficiency Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Plant Nutrition Deficiency Detection</h1>
+    <form id="plant-form">
+        <label for="plant-type">Plant Type:</label>
+        <input type="text" id="plant-type" name="plant-type" required>
+        <label for="symptoms">Symptoms (comma-separated):</label>
+        <input type="text" id="symptoms" name="symptoms" required>
+        <button type="submit">Check Deficiency</button>
+    </form>
+    <div id="result"></div>
+    <div class="section">
+    <div class="title">Live Camera Analysis</div>
+    <video id="video" autoplay></video>
+    <br>
+    <button id="captureButton">Capture & Analyze</button>
+    <canvas id="canvasCamera"></canvas>
+    <div class="result" id="resultCamera"></div>
+  </div>
+   <div class="section">
+    <div class="title">Uploaded Image Analysis</div>
+    <input type="file" id="imageUpload" accept="image/*">
+    <canvas id="canvasUpload"></canvas>
+    <div class="result" id="resultUpload"></div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
